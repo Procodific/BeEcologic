@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ED68440D-41DE-4E4E-B3A3-19D71CACBD42</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Be_Ecologic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>91086960AA6D16AB8F274DC135094DF3F7F8A15E</key>
+		<string>https://github.com/Pitahaya-Studios/BeEcologic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Be_Ecologic/Be_Ecologic.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>91086960AA6D16AB8F274DC135094DF3F7F8A15E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Pitahaya-Studios/BeEcologic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>91086960AA6D16AB8F274DC135094DF3F7F8A15E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>91086960AA6D16AB8F274DC135094DF3F7F8A15E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BeEcologic</string>
+		</dict>
+	</array>
+</dict>
+</plist>
