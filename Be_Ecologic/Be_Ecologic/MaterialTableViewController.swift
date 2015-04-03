@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class MaterialTableViewController: UITableViewController {
-
-    let materiales = ["item1", "item2", "item3"]
+    
+    var currentEnvase: Envase!
+    var presentaciones: [Presentacion] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,11 @@ class MaterialTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        for p in currentEnvase.presentaciones.allObjects as [Presentacion] {
+            println("\(p.envase.nombre) + \(p.material.nombre)")
+            presentaciones.append(p)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +45,7 @@ class MaterialTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return materiales.count
+        return presentaciones.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -46,7 +53,7 @@ class MaterialTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = materiales[indexPath.row]
+        cell.textLabel?.text = presentaciones[indexPath.row].material.nombre
 
         return cell
     }
@@ -86,14 +93,19 @@ class MaterialTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "getProductos" {
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let destinationController = segue.destinationViewController as ProductoTableViewController
+                destinationController.currentPresentacion = presentaciones[indexPath.row]
+            }
+        }
     }
-    */
-
 }

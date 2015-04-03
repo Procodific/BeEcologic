@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="C07-P0-Cx8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="C07-P0-Cx8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -8,7 +8,7 @@
         <!--Menú-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="MainMenuViewController" customModule="Be_Ecologic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-s3-j2D">
-                                <rect key="frame" x="115" y="72" width="90" height="45"/>
+                                <rect key="frame" x="115" y="53" width="90" height="45"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                 <state key="normal" title="Buscar">
@@ -28,57 +28,6 @@
                                     <segue destination="BOv-jC-nC1" kind="push" id="7T4-2c-9Dz"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bote_residuos" translatesAutoresizingMaskIntoConstraints="NO" id="d4i-2B-ALx">
-                                <rect key="frame" x="16" y="147" width="133" height="109"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bote_amarillo" translatesAutoresizingMaskIntoConstraints="NO" id="nXU-9S-iNe">
-                                <rect key="frame" x="171" y="147" width="133" height="109"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bote_azul" translatesAutoresizingMaskIntoConstraints="NO" id="MMx-Tp-Ofu">
-                                <rect key="frame" x="16" y="344" width="133" height="109"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bote_verde" translatesAutoresizingMaskIntoConstraints="NO" id="aL5-eF-FXq">
-                                <rect key="frame" x="171" y="344" width="134" height="109"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1K-mz-ab7">
-                                <rect key="frame" x="49" y="264" width="67" height="34"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Residuos">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3n3-BM-rTg" kind="push" id="i6H-M4-dMi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPR-0D-jv1">
-                                <rect key="frame" x="206" y="264" width="62" height="34"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Amarillo">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NS0-4Y-CgZ">
-                                <rect key="frame" x="56" y="461" width="52" height="34"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Azúl">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52G-zu-YlT">
-                                <rect key="frame" x="215" y="461" width="44" height="34"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Verde">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp5-5y-Oyr">
                                 <rect key="frame" x="131" y="507" width="59" height="41"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,50 +36,51 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9P-Sh-EI2">
+                                <rect key="frame" x="176" y="134" width="128" height="128"/>
+                                <state key="normal" backgroundImage="boton_plastico">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="46M-DF-HnE" kind="push" identifier="getBoteInfoPlastico" id="TSL-SC-iLA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oj-fo-PYk">
+                                <rect key="frame" x="16" y="347" width="128" height="128"/>
+                                <state key="normal" backgroundImage="boton_metal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="46M-DF-HnE" kind="push" identifier="getBoteInfoMetal" id="Gbf-n6-6yK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nb-kO-4vM">
+                                <rect key="frame" x="176" y="347" width="128" height="128"/>
+                                <state key="normal" backgroundImage="boton_vidrio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="46M-DF-HnE" kind="push" identifier="getBoteInfoVidrio" id="yQA-wB-NUq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLd-Im-fKf">
+                                <rect key="frame" x="16" y="134" width="128" height="128"/>
+                                <state key="normal" backgroundImage="boton_papel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="46M-DF-HnE" kind="push" identifier="getBoteInfoPapel" id="HzH-ck-Jgx"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Menú" id="bfz-ui-ada"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1174" y="300"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3ly-qE-npM">
-            <objects>
-                <viewController id="3n3-BM-rTg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uYc-MA-Unt"/>
-                        <viewControllerLayoutGuide type="bottom" id="mMp-s1-iWa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RNx-oX-sEs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bote_residuos" translatesAutoresizingMaskIntoConstraints="NO" id="A8b-SM-byX">
-                                <rect key="frame" x="94" y="139" width="133" height="109"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contenedor residuos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkg-tB-EwT">
-                                <rect key="frame" x="83" y="256" width="155" height="22"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zyt-Dj-Emv">
-                                <rect key="frame" x="40" y="286" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="wAR-Wy-zgV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GWp-Tf-Nxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1174" y="922"/>
         </scene>
         <!--Seleccione un envase-->
         <scene sceneID="euG-VA-7PV">
@@ -155,7 +105,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="uJh-lb-Cjy" kind="push" id="gXD-NT-lot"/>
+                                    <segue destination="uJh-lb-Cjy" kind="push" identifier="getMaterials" id="gXD-NT-lot"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -193,7 +143,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="44d-3M-HGy" kind="push" id="Q9n-pi-KQt"/>
+                                    <segue destination="44d-3M-HGy" kind="push" identifier="getProductos" id="Q9n-pi-KQt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -231,7 +181,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="3Sh-9T-3Fp" kind="push" id="AxP-cH-VID"/>
+                                    <segue destination="3Sh-9T-3Fp" kind="push" identifier="getProductInfo" id="AxP-cH-VID"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -246,10 +196,63 @@
             </objects>
             <point key="canvasLocation" x="2276" y="300"/>
         </scene>
+        <!--Info Residuos View Controller-->
+        <scene sceneID="Nqa-wl-FPy">
+            <objects>
+                <viewController id="46M-DF-HnE" customClass="InfoResiduosViewController" customModule="Be_Ecologic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RZb-hm-dSe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dfw-XZ-seV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="swI-4R-deV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ige-dg-ZbX">
+                                <rect key="frame" x="35" y="191" width="250" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RM1-Gw-LEZ">
+                                <rect key="frame" x="101" y="28" width="128" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dun-Dr-xZ9">
+                                <rect key="frame" x="35" y="408" width="250" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Si podemos depositar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smQ-Xg-2sZ">
+                                <rect key="frame" x="76" y="162" width="180" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.098674758020000003" green="0.441110322" blue="0.077132461599999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO podemos depositar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK3-nE-zbu">
+                                <rect key="frame" x="66" y="379" width="189" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.12549019607843137" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oxn-sv-B7F"/>
+                    <connections>
+                        <outlet property="boteImageView" destination="RM1-Gw-LEZ" id="l3X-mJ-Odz"/>
+                        <outlet property="depositarTextView" destination="ige-dg-ZbX" id="K9S-WU-EUJ"/>
+                        <outlet property="noDepositarTextView" destination="Dun-Dr-xZ9" id="2lG-bE-Rjd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xm-9d-R5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="959"/>
+        </scene>
         <!--¡Gracias por ser ecológico!-->
         <scene sceneID="Zhs-df-7qc">
             <objects>
-                <viewController id="3Sh-9T-3Fp" sceneMemberID="viewController">
+                <viewController id="3Sh-9T-3Fp" customClass="ProductoViewController" customModule="Be_Ecologic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W4R-7r-ciX"/>
                         <viewControllerLayoutGuide type="bottom" id="HhF-hz-KPQ"/>
@@ -258,27 +261,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="botella_vino" translatesAutoresizingMaskIntoConstraints="NO" id="9Om-yM-LCS">
-                                <rect key="frame" x="96" y="72" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Om-yM-LCS">
+                                <rect key="frame" x="96" y="28" width="128" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bote_verde" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-TK-o7I">
-                                <rect key="frame" x="96" y="220" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-TK-o7I">
+                                <rect key="frame" x="96" y="239" width="128" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contenedor verde" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktr-7g-0YS">
-                                <rect key="frame" x="91" y="356" width="139" height="22"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPO-yz-swR">
-                                <rect key="frame" x="40" y="386" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPO-yz-swR">
+                                <rect key="frame" x="40" y="375" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tec-TR-plU">
-                                <rect key="frame" x="100" y="518" width="144" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tec-TR-plU">
+                                <rect key="frame" x="88" y="511" width="144" height="37"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                 <state key="normal" title="Regresar al menú">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -287,36 +284,40 @@
                                     <segue destination="vXZ-lx-hvc" kind="push" id="26C-wg-dLe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi7-OW-Kzn">
+                                <rect key="frame" x="60" y="164" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ktr-7g-0YS" firstAttribute="top" secondItem="vd9-TK-o7I" secondAttribute="bottom" constant="8" id="29k-XM-w2a"/>
-                            <constraint firstItem="ktr-7g-0YS" firstAttribute="centerX" secondItem="pPO-yz-swR" secondAttribute="centerX" id="2wh-bQ-I59"/>
                             <constraint firstItem="vd9-TK-o7I" firstAttribute="top" secondItem="9Om-yM-LCS" secondAttribute="bottom" constant="20" id="3Ut-37-siq"/>
                             <constraint firstItem="pPO-yz-swR" firstAttribute="leading" secondItem="plu-Vt-vUA" secondAttribute="leadingMargin" constant="24" id="6xa-ge-C2R"/>
-                            <constraint firstAttribute="bottom" secondItem="ktr-7g-0YS" secondAttribute="bottom" constant="190" id="Eca-qe-sq8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Om-yM-LCS" secondAttribute="trailing" constant="80" id="HWz-3a-v6E"/>
-                            <constraint firstItem="ktr-7g-0YS" firstAttribute="leading" secondItem="plu-Vt-vUA" secondAttribute="leadingMargin" constant="75" id="Mnw-vy-FZe"/>
-                            <constraint firstItem="ktr-7g-0YS" firstAttribute="top" secondItem="vd9-TK-o7I" secondAttribute="bottom" constant="8" id="SIE-RB-tPU"/>
-                            <constraint firstItem="pPO-yz-swR" firstAttribute="top" secondItem="ktr-7g-0YS" secondAttribute="bottom" constant="8" symbolic="YES" id="UIz-bN-ffw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vd9-TK-o7I" secondAttribute="trailing" constant="80" id="asK-ld-Tcx"/>
                             <constraint firstItem="HhF-hz-KPQ" firstAttribute="top" secondItem="pPO-yz-swR" secondAttribute="bottom" constant="54" id="of2-zq-w94"/>
-                            <constraint firstItem="ktr-7g-0YS" firstAttribute="top" secondItem="vd9-TK-o7I" secondAttribute="bottom" constant="8" symbolic="YES" id="pB4-mQ-Pek"/>
                             <constraint firstItem="vd9-TK-o7I" firstAttribute="leading" secondItem="plu-Vt-vUA" secondAttribute="leadingMargin" constant="80" id="qHW-Kv-QaT"/>
                             <constraint firstItem="tec-TR-plU" firstAttribute="top" secondItem="pPO-yz-swR" secondAttribute="bottom" constant="4" id="qut-es-JBA"/>
                             <constraint firstItem="9Om-yM-LCS" firstAttribute="top" secondItem="W4R-7r-ciX" secondAttribute="bottom" constant="8" id="rYS-7X-vqO"/>
                             <constraint firstItem="tec-TR-plU" firstAttribute="leading" secondItem="plu-Vt-vUA" secondAttribute="leadingMargin" constant="84" id="rcL-qC-spz"/>
                             <constraint firstItem="vd9-TK-o7I" firstAttribute="centerY" secondItem="plu-Vt-vUA" secondAttribute="centerY" id="trY-4K-qXr"/>
                             <constraint firstItem="9Om-yM-LCS" firstAttribute="leading" secondItem="plu-Vt-vUA" secondAttribute="leadingMargin" constant="80" id="wAH-el-czJ"/>
-                            <constraint firstItem="ktr-7g-0YS" firstAttribute="centerX" secondItem="vd9-TK-o7I" secondAttribute="centerX" id="xtY-k0-UVR"/>
                             <constraint firstItem="HhF-hz-KPQ" firstAttribute="top" secondItem="tec-TR-plU" secondAttribute="bottom" constant="13" id="y30-18-nHr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="¡Gracias por ser ecológico!" id="BBe-OR-qKP"/>
+                    <connections>
+                        <outlet property="boteImageView" destination="vd9-TK-o7I" id="9Vr-Wb-iox"/>
+                        <outlet property="productoImageView" destination="9Om-yM-LCS" id="F8H-FJ-g1V"/>
+                        <outlet property="productoNombreLabel" destination="vi7-OW-Kzn" id="Ftg-p7-ak8"/>
+                        <outlet property="textoTextView" destination="pPO-yz-swR" id="MG5-K7-iDg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMs-Ms-Kw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="922"/>
+            <point key="canvasLocation" x="1700" y="993"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pAO-8n-8Q9">
@@ -338,11 +339,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bote_amarillo" width="128" height="128"/>
-        <image name="bote_azul" width="128" height="128"/>
-        <image name="bote_residuos" width="128" height="128"/>
-        <image name="bote_verde" width="128" height="128"/>
-        <image name="botella_vino" width="64" height="64"/>
+        <image name="boton_metal" width="128" height="128"/>
+        <image name="boton_papel" width="128" height="128"/>
+        <image name="boton_plastico" width="128" height="128"/>
+        <image name="boton_vidrio" width="128" height="128"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -351,5 +351,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="26C-wg-dLe"/>
+        <segue reference="yQA-wB-NUq"/>
     </inferredMetricsTieBreakers>
 </document>

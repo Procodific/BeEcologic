@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
-class EnvaseTableViewController: UITableViewController {
-
-    var envases = ["Aerosol", "Artículos hostelería/restauración", "Bandeja, base, barqueta", "Bidón, garrafa", "Blister", "Bolsa entregada en comercios", "Bolsa, bolsón, saco", "Bote, lata, tarro, frasco, vaso, tarrina", "Botella", "Caja, cajón, cajetilla", "Cartón para bebidas/líquidos", "Elementos de fijación y agrupación", "Envoltorio aluminio y papel aluminio", "Estuche, funda", "Lámina, envoltura, etiqueta", "Rodillo, mandril, bobina, carrete", "Sobre, Skin pack", "Tapones, tapas", "Tubos, cubos, cornetes", "Objetos que no son envases"]
+class EnvaseTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+    
+    // Insert and Select
+    var fetchResultController:NSFetchedResultsController!
+    var managedContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).coreDataStack.context
+    
+    var envases: [Envase] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,25 @@ class EnvaseTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        
+        var fetchRequest = NSFetchRequest(entityName: "Envase")
+        let sortDescriptor = NSSortDescriptor(key: "nombre", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        if managedContext as NSManagedObjectContext? != nil {
+            fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: managedContext, sectionNameKeyPath: nil, cacheName: nil)
+            fetchResultController.delegate = self
+            
+            var e: NSError?
+            var result = fetchResultController.performFetch(&e)
+            envases = fetchResultController.fetchedObjects as [Envase]
+            
+            if result != true {
+                println(e?.localizedDescription)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,8 +68,7 @@ class EnvaseTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as UITableViewCell
-
-        cell.textLabel?.text = envases[indexPath.row]
+        cell.textLabel?.text = envases[indexPath.row].nombre
         
         // Configure the cell...
 
@@ -87,14 +110,19 @@ class EnvaseTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "getMaterials" {
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let destinationController = segue.destinationViewController as MaterialTableViewController
+                destinationController.currentEnvase = envases[indexPath.row]
+            }
+        }
     }
-    */
 
 }

@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 class ProductoTableViewController: UITableViewController {
 
-    let productos = ["item1", "item2"]
+    var productos: [Producto] = []
+    var currentPresentacion: Presentacion!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,12 @@ class ProductoTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+
+        for prods in currentPresentacion.productos.allObjects as [Producto] {
+            println("\(prods.nombre)")
+            productos.append(prods)
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,7 +55,7 @@ class ProductoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = productos[indexPath.row]
+        cell.textLabel?.text = productos[indexPath.row].nombre
         
         return cell
     }
@@ -86,14 +95,24 @@ class ProductoTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        if segue.identifier == "getProductInfo" {
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let destinationController = segue.destinationViewController as ProductoViewController
+                destinationController.productoImage = productos[indexPath.row].imagenData
+                destinationController.boteImage = "bote_plastico.jpg"
+                destinationController.textoText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae asperiores magni atque, dolor eius doloremque libero, laborum doloribus dolorum."
+                destinationController.productoNombre = productos[indexPath.row].nombre
+                destinationController.productoImage = productos[indexPath.row].imagenData
+                // Asignar las variables por segue
+            }
+        }
+        
     }
-    */
 
 }

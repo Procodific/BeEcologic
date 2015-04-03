@@ -9,9 +9,18 @@
 /* Begin PBXBuildFile section */
 		8C24D5C31A70B7C8001DFE90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C24D5C21A70B7C8001DFE90 /* AppDelegate.swift */; };
 		8C24D5C81A70B7C8001DFE90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C24D5C61A70B7C8001DFE90 /* Main.storyboard */; };
-		8C24D5CA1A70B7C8001DFE90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C24D5C91A70B7C8001DFE90 /* Images.xcassets */; };
 		8C24D5CD1A70B7C8001DFE90 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C24D5CB1A70B7C8001DFE90 /* LaunchScreen.xib */; };
 		8C24D5D91A70B7C8001DFE90 /* Be_EcologicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C24D5D81A70B7C8001DFE90 /* Be_EcologicTests.swift */; };
+		8C2C23651AC9D95D00708C3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2C23641AC9D95D00708C3E /* Images.xcassets */; };
+		8C6829101AAE578F00032733 /* Be_Ecologic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C68290E1AAE578F00032733 /* Be_Ecologic.xcdatamodeld */; };
+		8C8FCE101ABA150B00CEA82A /* Envase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8FCE0F1ABA150B00CEA82A /* Envase.swift */; };
+		8C8FCE121ABA150C00CEA82A /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8FCE111ABA150C00CEA82A /* Material.swift */; };
+		8C8FCE161ABA150C00CEA82A /* Presentacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8FCE151ABA150C00CEA82A /* Presentacion.swift */; };
+		8C95B07E1AB677A7005F195D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95B07D1AB677A7005F195D /* CoreDataStack.swift */; };
+		8CA68D601AC3CAE80069A924 /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA68D5F1AC3CAE80069A924 /* Producto.swift */; };
+		8CC89A4D1AC073D600D86781 /* ProductoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC89A4C1AC073D600D86781 /* ProductoViewController.swift */; };
+		8CC89A4F1AC0781C00D86781 /* InfoResiduosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC89A4E1AC0781C00D86781 /* InfoResiduosViewController.swift */; };
+		8CC89A511AC078B000D86781 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC89A501AC078B000D86781 /* MainMenuViewController.swift */; };
 		8CD3DE5D1A7A11A9005E34EF /* EnvaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3DE5C1A7A11A9005E34EF /* EnvaseTableViewController.swift */; };
 		8CD3DE5F1A7A11B6005E34EF /* MaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3DE5E1A7A11B6005E34EF /* MaterialTableViewController.swift */; };
 		8CD3DE611A7A11C0005E34EF /* ProductoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3DE601A7A11C0005E34EF /* ProductoTableViewController.swift */; };
@@ -32,11 +41,21 @@
 		8C24D5C11A70B7C8001DFE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C24D5C21A70B7C8001DFE90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C24D5C71A70B7C8001DFE90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8C24D5C91A70B7C8001DFE90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8C24D5CC1A70B7C8001DFE90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8C24D5D21A70B7C8001DFE90 /* Be_EcologicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Be_EcologicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C24D5D71A70B7C8001DFE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C24D5D81A70B7C8001DFE90 /* Be_EcologicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Be_EcologicTests.swift; sourceTree = "<group>"; };
+		8C2C23641AC9D95D00708C3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8C3652271A82C7B6002582DA /* Be_EcologicPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Be_EcologicPlayground.playground; sourceTree = "<group>"; };
+		8C68290F1AAE578F00032733 /* Be_Ecologic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Be_Ecologic.xcdatamodel; sourceTree = "<group>"; };
+		8C8FCE0F1ABA150B00CEA82A /* Envase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Envase.swift; path = ../Envase.swift; sourceTree = "<group>"; };
+		8C8FCE111ABA150C00CEA82A /* Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Material.swift; path = ../Material.swift; sourceTree = "<group>"; };
+		8C8FCE151ABA150C00CEA82A /* Presentacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presentacion.swift; path = ../Presentacion.swift; sourceTree = "<group>"; };
+		8C95B07D1AB677A7005F195D /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8CA68D5F1AC3CAE80069A924 /* Producto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Producto.swift; path = ../Producto.swift; sourceTree = "<group>"; };
+		8CC89A4C1AC073D600D86781 /* ProductoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductoViewController.swift; sourceTree = "<group>"; };
+		8CC89A4E1AC0781C00D86781 /* InfoResiduosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoResiduosViewController.swift; sourceTree = "<group>"; };
+		8CC89A501AC078B000D86781 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		8CD3DE5C1A7A11A9005E34EF /* EnvaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvaseTableViewController.swift; sourceTree = "<group>"; };
 		8CD3DE5E1A7A11B6005E34EF /* MaterialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTableViewController.swift; sourceTree = "<group>"; };
 		8CD3DE601A7A11C0005E34EF /* ProductoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductoTableViewController.swift; sourceTree = "<group>"; };
@@ -81,14 +100,19 @@
 		8C24D5BF1A70B7C8001DFE90 /* Be_Ecologic */ = {
 			isa = PBXGroup;
 			children = (
+				8C68290E1AAE578F00032733 /* Be_Ecologic.xcdatamodeld */,
+				8C95B07D1AB677A7005F195D /* CoreDataStack.swift */,
+				8C2C23641AC9D95D00708C3E /* Images.xcassets */,
 				8C24D5C21A70B7C8001DFE90 /* AppDelegate.swift */,
 				8C24D5C61A70B7C8001DFE90 /* Main.storyboard */,
-				8C24D5C91A70B7C8001DFE90 /* Images.xcassets */,
 				8C24D5CB1A70B7C8001DFE90 /* LaunchScreen.xib */,
+				8CC89A501AC078B000D86781 /* MainMenuViewController.swift */,
+				8CC89A4E1AC0781C00D86781 /* InfoResiduosViewController.swift */,
+				8CF7447E1AC0AE7600469B00 /* CustomTableViews */,
+				8CC89A4C1AC073D600D86781 /* ProductoViewController.swift */,
+				8C95B07F1AB677D2005F195D /* ManagedObject Subclass */,
 				8C24D5C01A70B7C8001DFE90 /* Supporting Files */,
-				8CD3DE5C1A7A11A9005E34EF /* EnvaseTableViewController.swift */,
-				8CD3DE5E1A7A11B6005E34EF /* MaterialTableViewController.swift */,
-				8CD3DE601A7A11C0005E34EF /* ProductoTableViewController.swift */,
+				8C3652271A82C7B6002582DA /* Be_EcologicPlayground.playground */,
 			);
 			path = Be_Ecologic;
 			sourceTree = "<group>";
@@ -116,6 +140,27 @@
 				8C24D5D71A70B7C8001DFE90 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C95B07F1AB677D2005F195D /* ManagedObject Subclass */ = {
+			isa = PBXGroup;
+			children = (
+				8C8FCE0F1ABA150B00CEA82A /* Envase.swift */,
+				8C8FCE111ABA150C00CEA82A /* Material.swift */,
+				8C8FCE151ABA150C00CEA82A /* Presentacion.swift */,
+				8CA68D5F1AC3CAE80069A924 /* Producto.swift */,
+			);
+			name = "ManagedObject Subclass";
+			sourceTree = "<group>";
+		};
+		8CF7447E1AC0AE7600469B00 /* CustomTableViews */ = {
+			isa = PBXGroup;
+			children = (
+				8CD3DE5C1A7A11A9005E34EF /* EnvaseTableViewController.swift */,
+				8CD3DE5E1A7A11B6005E34EF /* MaterialTableViewController.swift */,
+				8CD3DE601A7A11C0005E34EF /* ProductoTableViewController.swift */,
+			);
+			name = CustomTableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2C23651AC9D95D00708C3E /* Images.xcassets in Resources */,
 				8C24D5C81A70B7C8001DFE90 /* Main.storyboard in Resources */,
 				8C24D5CD1A70B7C8001DFE90 /* LaunchScreen.xib in Resources */,
-				8C24D5CA1A70B7C8001DFE90 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +263,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC89A4F1AC0781C00D86781 /* InfoResiduosViewController.swift in Sources */,
+				8C8FCE121ABA150C00CEA82A /* Material.swift in Sources */,
+				8C8FCE161ABA150C00CEA82A /* Presentacion.swift in Sources */,
+				8C6829101AAE578F00032733 /* Be_Ecologic.xcdatamodeld in Sources */,
 				8C24D5C31A70B7C8001DFE90 /* AppDelegate.swift in Sources */,
 				8CD3DE611A7A11C0005E34EF /* ProductoTableViewController.swift in Sources */,
+				8C8FCE101ABA150B00CEA82A /* Envase.swift in Sources */,
+				8C95B07E1AB677A7005F195D /* CoreDataStack.swift in Sources */,
+				8CA68D601AC3CAE80069A924 /* Producto.swift in Sources */,
+				8CC89A511AC078B000D86781 /* MainMenuViewController.swift in Sources */,
+				8CC89A4D1AC073D600D86781 /* ProductoViewController.swift in Sources */,
 				8CD3DE5F1A7A11B6005E34EF /* MaterialTableViewController.swift in Sources */,
 				8CD3DE5D1A7A11A9005E34EF /* EnvaseTableViewController.swift in Sources */,
 			);
@@ -344,9 +398,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Be_Ecologic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Be_Ecologic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +482,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C68290E1AAE578F00032733 /* Be_Ecologic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C68290F1AAE578F00032733 /* Be_Ecologic.xcdatamodel */,
+			);
+			currentVersion = 8C68290F1AAE578F00032733 /* Be_Ecologic.xcdatamodel */;
+			path = Be_Ecologic.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8C24D5B51A70B7C8001DFE90 /* Project object */;
 }

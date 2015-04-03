@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Envase" representedClassName="Be_Ecologic.Envase" syncable="YES">
+        <attribute name="idEnvase" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="presentaciones" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Presentacion" inverseName="envase" inverseEntity="Presentacion" syncable="YES"/>
+    </entity>
+    <entity name="Material" representedClassName="Be_Ecologic.Material" syncable="YES">
+        <attribute name="idMaterial" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="presentaciones" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Presentacion" inverseName="material" inverseEntity="Presentacion" syncable="YES"/>
+    </entity>
+    <entity name="Presentacion" representedClassName="Be_Ecologic.Presentacion" syncable="YES">
+        <attribute name="idEnvase" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="idMaterial" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="idPresentacion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="envase" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Envase" inverseName="presentaciones" inverseEntity="Envase" syncable="YES"/>
+        <relationship name="material" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Material" inverseName="presentaciones" inverseEntity="Material" syncable="YES"/>
+        <relationship name="productos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Producto" inverseName="presentacion" inverseEntity="Producto" syncable="YES"/>
+    </entity>
+    <entity name="Producto" representedClassName="Be_Ecologic.Producto" syncable="YES">
+        <attribute name="idProducto" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="imagenData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="presentacion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Presentacion" inverseName="productos" inverseEntity="Presentacion" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Envase" positionX="-126" positionY="279" width="119" height="88"/>
+        <element name="Material" positionX="81" positionY="335" width="128" height="88"/>
+        <element name="Presentacion" positionX="43" positionY="101" width="128" height="133"/>
+        <element name="Producto" positionX="250" positionY="144" width="128" height="105"/>
+    </elements>
+</model>
