@@ -1,4 +1,14 @@
-BeEcologic
-==========
+BeEcologic iOS
+====================
 
-Juego para concientizar a los niños sobre el reciclaje de la basura y los problemas que estos pueden causar
+About
+-----
+BeEcologic app en iOS. Clasificador de basua básica, por medios de tablas.
+
+Dudas, comentarios y demás:[suericgp@gmail.com]
+
+¿Cómo instalar?
+--------------
+
+1. Instalar XCode
+2. Correr la app en device o simulador
